@@ -9,7 +9,9 @@
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
-    "lint:pkg": "eslint ./packages/**/*.js"
+    "lint:pkg": "eslint ./packages/**/*.js",
+    "version": "changeset version",
+    "release": "changeset publish"
   },
   "devDependencies": {
     "@alexasselin/eslint-config": "*",

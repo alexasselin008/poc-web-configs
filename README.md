@@ -15,11 +15,6 @@ POC must contain:
     - [ ] lint 
     - [ ] publish on npm
 
-
-
-
-
-
 # Turborepo starter
 
 This is an official npm starter turborepo.
