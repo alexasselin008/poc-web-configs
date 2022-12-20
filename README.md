@@ -1,7 +1,7 @@
 # poc-web-configs
 Proof of concept of a repo containing Common configurations for building web apps at ShareGate
 
-Proof contains: 
+POC must contain: 
 - [ ] TurboRepo
 - [ ] Changeset cli to detect changes
 - [ ] 5 distinct configurations
