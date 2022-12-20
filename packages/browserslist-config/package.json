@@ -1,0 +1,20 @@
+{
+  "name": "@alexasselin/browserslist-config",
+  "author": "Groupe Sharegate inc.",
+  "description": "Sharegate recommended Browserslist config.",
+  "version": "0.0.0",
+  "main": "index.js",
+  "license": "Apache-2.0",
+  "keywords": [
+    "sharegate",
+    "browserslist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexasselin008/poc-web-configs.git",
+    "directory": "packages/browserslist-config"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "poc-web-configs",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "lint": "turbo run lint",
+    "lint:pkg": "eslint ./packages/**/*.js"
+  },
+  "devDependencies": {
+    "@alexasselin/eslint-config": "*",
+    "turbo": "latest",
+    "@changesets/cli": "2.26.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "packageManager": "npm@8.11.0"
+}

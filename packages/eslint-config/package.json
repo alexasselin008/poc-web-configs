@@ -1,0 +1,36 @@
+{
+  "name": "@alexasselin/eslint-config",
+  "author": "Groupe Sharegate inc.",
+  "description": "Sharegate's ESLint config.",
+  "version": "0.0.0",
+  "main": "index.js",
+  "license": "Apache-2.0",
+  "keywords": [
+    "sharegate",
+    "eslint",
+    "eslintconfig",
+    "eslint-config"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexasselin008/poc-web-configs.git",
+    "directory": "packages/eslint-config"
+  },
+  "dependencies": {
+    "eslint": "^7 || ^8",
+    "@typescript-eslint/eslint-plugin": "*",
+    "@next/eslint-plugin-next": "*",
+    "eslint-plugin-sort-imports-es6-autofix": "*",
+    "eslint-plugin-import": "*",
+    "eslint-plugin-jsx-a11y": "*",
+    "eslint-plugin-react": "*",
+    "eslint-plugin-react-hooks": "*",
+    "eslint-plugin-lodash": "*"
+  },
+  "peerDependencies": {
+      "eslint": "^7 || ^8"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

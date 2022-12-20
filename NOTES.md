@@ -1,0 +1,1 @@
+- Could start transfering stylelint stylistic rules into stylelint-prettier rules 
