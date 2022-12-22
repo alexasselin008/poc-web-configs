@@ -6,14 +6,12 @@
     "packages/*"
   ],
   "scripts": {
-    "lint": "turbo run lint",
-    "lint:pkg": "eslint ./packages/**/*.js",
+    "lint": "eslint ./packages/**/*.js",
     "version": "changeset version",
     "release": "changeset publish"
   },
   "devDependencies": {
     "@alexasselin/eslint-config": "*",
-    "turbo": "latest",
     "@changesets/cli": "2.26.0"
   },
   "engines": {

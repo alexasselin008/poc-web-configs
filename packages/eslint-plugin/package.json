@@ -1,5 +1,5 @@
 {
-  "name": "@alexasselin/eslint-config",
+  "name": "@alexasselin/eslint-plugin",
   "author": "Groupe Sharegate inc.",
   "description": "Sharegates ESLint rules and configs.",
   "version": "1.0.0",
@@ -16,7 +16,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/alexasselin008/poc-web-configs.git",
-    "directory": "packages/eslint-config"
+    "directory": "packages/eslint-plugin"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "*",

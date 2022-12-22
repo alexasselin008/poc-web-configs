@@ -1,5 +1,3 @@
-"use strict";
-
 module.exports = {
     meta: {
         docs: {
@@ -25,7 +23,7 @@ module.exports = {
                     if (specifier.local.name !== "cx") {
                         context.report(
                             node,
-                            'You should use "cx" as the reference name when importing classnames.'
+                            "You should use \"cx\" as the reference name when importing classnames."
                         );
                     }
                 });

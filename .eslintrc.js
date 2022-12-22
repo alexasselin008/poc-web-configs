@@ -1,9 +1,12 @@
 module.exports = {
     root: true,
-    // This tells ESLint to load the config from the package `eslint-config-custom`
-    extends: "@alexasselin/eslint-config/recommended",
+    extends: "plugin:@alexasselin/eslint-plugin/recommended",
     env: {
         commonjs: true,
         node: true
+    },
+    parserOptions: { 
+        // Required for certain syntax usages
+        "ecmaVersion": 2020
     }
 };

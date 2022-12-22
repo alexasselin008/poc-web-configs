@@ -1,6 +1,4 @@
-"use strict";
-
-var requireIndex = require("requireindex");
+const requireIndex = require("requireindex");
 
 /** @type {import('eslint').ESLint.Plugin} */
 const config = {
