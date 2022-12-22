@@ -14,7 +14,8 @@
     "allowUnreachableCode": false,
     "noUnusedLocals": true,
     "noFallthroughCasesInSwitch": true,
-    "noImplicitOverride": true
+    "noImplicitOverride": true,
+    "resolveJsonModule": true
   }
 }
 
