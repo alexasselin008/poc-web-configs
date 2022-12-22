@@ -1,6 +1,6 @@
-# `@sharegate/browserslist-config-recommended`
+# `@sharegate/browserslist-config`
 
-[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](../../LICENSE.md) [![npm version](https://badge.fury.io/js/@sharegate%2Fbrowserslist-config-recommended.svg)](https://badge.fury.io/js/@sharegate%2Fbrowserslist-config-recommended.svg)
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](../../LICENSE.md) [![npm version](https://badge.fury.io/js/@sharegate%2Fbrowserslist-config.svg)](https://badge.fury.io/js/@sharegate%2Fbrowserslist-config.svg)
 
 
 Shareable [browserslist](https://github.com/browserslist/browserslist) configuration for ShareGate.
@@ -11,12 +11,12 @@ Install the package.
 
 **With npm**
 ```shell
-npm i --save-dev @sharegate/browserslist-config-recommended
+npm i --save-dev @sharegate/browserslist-config
 ```
 
 **With yarn**
 ```shell
-yarn add --dev @sharegate/browserslist-config-recommended
+yarn add --dev @sharegate/browserslist-config
 ```
 
 ## Supported Browsers
@@ -28,7 +28,7 @@ https://browsersl.ist/#q=last+1+year%2C+%3E+0.2%25%2C+Firefox+ESR%2C+not+dead%2C
 
 Create a `.browserslistrc` file at the root of your project with the following content:
 ```
-extends @sharegate/browserslist-config-recommended
+extends @sharegate/browserslist-config
 ```
 
 ## License
