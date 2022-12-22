@@ -2,7 +2,7 @@
   "name": "@alexasselin/browserslist-config",
   "author": "Groupe Sharegate inc.",
   "description": "Sharegate recommended Browserslist config.",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "main": "index.js",
   "license": "Apache-2.0",
   "keywords": [

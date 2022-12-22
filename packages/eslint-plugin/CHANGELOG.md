@@ -1,5 +1,11 @@
 # @alexasselin/eslint-config
 
+## 3.0.0
+
+### Major Changes
+
+- 76f2ed7: Remove strict config and bump version
+
 ## 2.0.0
 
 ### Major Changes
