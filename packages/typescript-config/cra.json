@@ -3,6 +3,6 @@
   "extends": "./react.json",
   "compilerOptions": {
     "noEmit": true,
-    "incremental": true,
+    "incremental": true
   }
 }
