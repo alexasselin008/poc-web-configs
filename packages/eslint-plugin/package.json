@@ -1,15 +1,17 @@
 {
   "name": "@alexasselin/eslint-config",
   "author": "Groupe Sharegate inc.",
-  "description": "Sharegate's ESLint config.",
+  "description": "Sharegates ESLint rules and configs.",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "lib/index.js",
   "license": "Apache-2.0",
   "keywords": [
     "sharegate",
     "eslint",
     "eslintconfig",
-    "eslint-config"
+    "eslintplugin",
+    "eslint-config",
+    "eslint-plugin"
   ],
   "repository": {
     "type": "git",
@@ -17,7 +19,6 @@
     "directory": "packages/eslint-config"
   },
   "dependencies": {
-    "eslint": "^7 || ^8",
     "@typescript-eslint/eslint-plugin": "*",
     "@next/eslint-plugin-next": "*",
     "eslint-plugin-sort-imports-es6-autofix": "*",
@@ -25,7 +26,8 @@
     "eslint-plugin-jsx-a11y": "*",
     "eslint-plugin-react": "*",
     "eslint-plugin-react-hooks": "*",
-    "eslint-plugin-lodash": "*"
+    "eslint-plugin-lodash": "*",
+    "requireindex": "1.2.0"
   },
   "peerDependencies": {
     "eslint": "^7 || ^8"

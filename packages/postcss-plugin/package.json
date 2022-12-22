@@ -1,0 +1,29 @@
+{
+    "name": "@alexasselin/postcss-plugin",
+    "author": "Groupe Sharegate inc.",
+    "version": "0.0.0",
+    "description": "Sharegate recommended typescript config.",
+    "publishConfig": {
+        "access": "public"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/alexasselin008/poc-web-configs.git",
+        "directory": "packages/postcss-plugin"
+    },
+    "license": "Apache-2.0",
+    "keywords": [
+        "sharegate",
+        "postcss",
+        "postcss-plugin",
+        "css"
+    ],
+    "dependencies": {
+        "postcss-flexbugs-fixes": "5.0.2",
+        "postcss-preset-env": "7.8.3",
+        "postcss-pxtorem": "6.0.0"
+    },
+    "peerDependencies": {
+        "postcss": "^8.0.0"
+    }
+}

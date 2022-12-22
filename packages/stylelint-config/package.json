@@ -4,7 +4,11 @@
     "version": "1.0.0",
     "description": "Sharegate recommended stylelint config.",
     "main": "index.js",
-    "repository": "https://github.com/gsoft-inc/sg-stylelint.git",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/alexasselin008/poc-web-configs.git",
+        "directory": "packages/stylelint-config"
+    },
     "license": "Apache-2.0",
     "keywords": [
         "sharegate",

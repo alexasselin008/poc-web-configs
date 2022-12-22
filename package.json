@@ -6,8 +6,6 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "turbo run build",
-    "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
     "lint:pkg": "eslint ./packages/**/*.js",
     "version": "changeset version",
