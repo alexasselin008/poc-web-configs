@@ -1,5 +1,11 @@
 # @alexasselin/typescript-config
 
+## 2.1.0
+
+### Minor Changes
+
+- b824d10: jsx must be set to preserve
+
 ## 2.0.0
 
 ### Major Changes

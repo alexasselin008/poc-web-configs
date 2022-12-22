@@ -1,7 +1,7 @@
 {
     "name": "@alexasselin/typescript-config",
     "author": "Groupe Sharegate inc.",
-    "version": "2.0.0",
+    "version": "2.1.0",
     "description": "Sharegate recommended typescript config.",
     "repository": {
         "type": "git",
