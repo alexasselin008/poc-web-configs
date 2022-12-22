@@ -1,5 +1,11 @@
 # @alexasselin/eslint-config
 
+## 5.0.0
+
+### Major Changes
+
+- 6e12c82: Fix TS Config and add intellissense to eslint
+
 ## 4.0.0
 
 ### Major Changes

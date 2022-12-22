@@ -1,5 +1,11 @@
 # @alexasselin/browserslist-config
 
+## 3.0.0
+
+### Major Changes
+
+- 6e12c82: Fix TS Config and add intellissense to eslint
+
 ## 2.0.0
 
 ### Major Changes
