@@ -1,3 +1,4 @@
+/** @type {import('eslint').Linter.Config} */
 module.exports = {
     plugins: ["sort-imports-es6-autofix"],
     rules: {

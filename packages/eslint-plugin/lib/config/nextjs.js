@@ -1,6 +1,7 @@
+/** @type {import('eslint').Linter.Config} */
 module.exports = {
     extends:[
         "plugin:@next/next/recommended",
-        "@sharegate/eslint-config-react"
+        "plugin:@alexasselin/eslint-plugin/react"
     ]
 };

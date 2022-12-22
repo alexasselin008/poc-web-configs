@@ -1,3 +1,4 @@
+/** @type {import('browserslist').Config} */
 module.exports = [
     "last 1 year",
     "> 0.2%",

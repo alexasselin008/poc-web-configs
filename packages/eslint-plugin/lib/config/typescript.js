@@ -1,3 +1,4 @@
+/** @type {import('eslint').Linter.Config} */
 module.exports = {
     plugins: ["@typescript-eslint"],
     extends: [
@@ -7,6 +8,7 @@ module.exports = {
     overrides: [
         {
             parser: "@typescript-eslint/parser",
+            files: ["*.ts", "*.tsx"],
             rules: {
                 // plugin:@typescript-eslint/recommended but warn instead of errors
                 "@typescript-eslint/ban-ts-comment": "warn",
