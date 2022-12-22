@@ -2,7 +2,7 @@
   "name": "@alexasselin/eslint-plugin",
   "author": "Groupe Sharegate inc.",
   "description": "Sharegates ESLint rules and configs.",
-  "version": "5.0.0",
+  "version": "0.0.0",
   "main": "lib/index.js",
   "license": "Apache-2.0",
   "keywords": [
