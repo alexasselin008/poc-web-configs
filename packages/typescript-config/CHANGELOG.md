@@ -1,5 +1,11 @@
 # @alexasselin/typescript-config
 
+## 2.2.0
+
+### Minor Changes
+
+- bc8a0a9: typescript config updated
+
 ## 2.1.0
 
 ### Minor Changes
