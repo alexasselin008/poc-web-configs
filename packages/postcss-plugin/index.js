@@ -37,17 +37,18 @@ const PXTOREM_OPTIONS = {
     ]
 };
 
-/** @type {import('postcss').Plugin} */
-const plugin = ({ presetEnvOptions = PRESET_ENV_OPTIONS, pxToRemOptions = PXTOREM_OPTIONS }) => {
+/** @type {import('postcss').PluginCreator} */
+const plugin = () => {
     return {
         postcssPlugin: "@alexasselin/postcss-plugin",
         ...postcss([
             require("postcss-flexbugs-fixes"),
-            require("postcss-preset-env")(presetEnvOptions),
-            require("postcss-pxtorem")(pxToRemOptions)
+            require("postcss-preset-env")(PRESET_ENV_OPTIONS),
+            require("postcss-pxtorem")(PXTOREM_OPTIONS)
         ])
     };
 };
 
+plugin.postcss = true;
+
 module.exports = plugin;
-module.exports.postcss = true;
