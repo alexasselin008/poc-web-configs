@@ -1,5 +1,11 @@
 # @alexasselin/eslint-config
 
+## 4.0.0
+
+### Major Changes
+
+- 6418c7a: Change dependency
+
 ## 3.0.0
 
 ### Major Changes
