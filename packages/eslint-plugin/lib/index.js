@@ -1,9 +1,7 @@
 const requireIndex = require("requireindex");
 
 /** @type {import('eslint').ESLint.Plugin} */
-const config = {
+module.exports = {
     rules: requireIndex(__dirname + "/rules"),
     configs: requireIndex(__dirname + "/config")
 };
-
-module.exports = config;

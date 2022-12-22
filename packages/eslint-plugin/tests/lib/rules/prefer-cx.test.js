@@ -25,7 +25,17 @@ ruleTester.run("prefer-cx", rule, {
     ],
 
     invalid: [
-        { code: "import classnames from \"classnames\";", errors, parserOptions },
-        { code: "import foo from \"classnames\";", errors, parserOptions }
+        { 
+            code: "import classnames from \"classnames\";",
+            output: "import cx from \"classnames\";",
+            errors,
+            parserOptions
+        },
+        { 
+            code: "import foo from \"classnames\";",
+            output: "import cx from \"classnames\";",
+            errors,
+            parserOptions
+        }
     ]
 });

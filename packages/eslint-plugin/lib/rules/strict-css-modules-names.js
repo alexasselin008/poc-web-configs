@@ -3,6 +3,7 @@ const { getNodeSource } = require("../utils/node");
 const { getFileName } = require("../utils/context");
 const { parse, sep } = require("path");
 
+/** @type {import('eslint').Rule.RuleModule} */
 module.exports = {
     meta: {
         docs: {

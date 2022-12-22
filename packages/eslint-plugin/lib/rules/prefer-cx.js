@@ -1,3 +1,4 @@
+/** @type {import('eslint').Rule.RuleModule} */
 module.exports = {
     meta: {
         docs: {
@@ -6,7 +7,7 @@ module.exports = {
             category: "Strict Imports",
             recommended: false
         },
-        fixable: null,
+        fixable: "code",
         schema: []
     },
 
@@ -21,10 +22,13 @@ module.exports = {
                         return;
                     }
                     if (specifier.local.name !== "cx") {
-                        context.report(
+                        context.report({
                             node,
-                            "You should use \"cx\" as the reference name when importing classnames."
-                        );
+                            message: "You should use \"cx\" as the reference name when importing classnames.",
+                            fix(fixer) {
+                                return fixer.replaceText(specifier.local, "cx");
+                            }
+                        });
                     }
                 });
             }
