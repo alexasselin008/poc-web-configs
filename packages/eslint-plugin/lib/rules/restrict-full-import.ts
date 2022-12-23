@@ -1,11 +1,14 @@
-/** @type {import('eslint').Rule.RuleModule} */
-module.exports = {
+import { Rule } from "eslint";
+import ESTree from "estree";
+
+const rule: Rule.RuleModule = {
     meta: {
         docs: {
             description: "Prevent importing the entirety of a package.",
             category: "Best Practices",
             recommended: false
         },
+        
         schema: [
             {
                 restricted: {
@@ -20,20 +23,20 @@ module.exports = {
     },
 
     create(context) {
-        const restricted = context.options[0] || [];
+        const restricted: string[] = context.options[0] || [];
 
-        function isRestrictedModule(mod) {
+        function isRestrictedModule(mod: string) {
             return restricted.indexOf(mod) >= 0;
         }
 
-        function isPotentiallyProblematicLeft(left) {
+        function isPotentiallyProblematicLeft(left: ESTree.Pattern) {
             return (
                 left.type === "Identifier" ||
                 (left.type === "ObjectPattern" &&
                     left.properties.some(prop => {
                         return (
-                            prop.type === "SpreadProperty" ||
-                            prop.type === "ExperimentalRestProperty" ||
+                            // @ts-ignore is needed because this codes comme from another repo, and the typing let us know that SpreadProperty isn't a valid type, but i don't want to change the code, so we need to ignore it
+                            prop.type === "SpreadProperty" || 
                             prop.type === "RestElement"
                         );
                     })) ||
@@ -46,17 +49,18 @@ module.exports = {
             );
         }
 
-        function isPotentiallyProblematicRight(right) {
+        function isPotentiallyProblematicRight(right?: ESTree.Expression | null) {
             return (
                 right &&
                 right.type === "CallExpression" &&
                 right.callee.type === "Identifier" &&
                 right.callee.name === "require" &&
-                isRestrictedModule(right.arguments[0].value)
+                // @ts-ignore is needed because this codes comme from another repo, and i'm not sure why it's not working
+                isRestrictedModule((right as ESTree.CallExpression).arguments[0].value)
             );
         }
 
-        function isFullImportSpecifier(specifier) {
+        function isFullImportSpecifier(specifier: ESTree.ImportSpecifier | ESTree.ImportDefaultSpecifier | ESTree.ImportNamespaceSpecifier) {
             return (
                 specifier.type === "ImportDefaultSpecifier" ||
                 specifier.type === "ImportNamespaceSpecifier" ||
@@ -65,21 +69,21 @@ module.exports = {
             );
         }
 
-        function hasFullImport(specifiers) {
+        function hasFullImport(specifiers: (ESTree.ImportSpecifier | ESTree.ImportDefaultSpecifier | ESTree.ImportNamespaceSpecifier)[]) {
             return specifiers.some(isFullImportSpecifier);
         }
 
-        function checkImportDeclaration(node) {
+        function checkImportDeclaration(node: ESTree.ImportDeclaration) {
             const specifiers = node.specifiers;
 
             if (
-                isRestrictedModule(node.source.value) &&
+                isRestrictedModule(node.source.value as string) &&
                 hasFullImport(specifiers)
             ) {
                 context.report({
                     node:
                         specifiers.length > 1
-                            ? specifiers.find(isFullImportSpecifier)
+                            ? specifiers.find(isFullImportSpecifier)!
                             : node,
                     message: `Unexpected full import of restricted module '${
                         node.source.value
@@ -88,7 +92,7 @@ module.exports = {
             }
         }
 
-        function checkRequire(node, left, right) {
+        function checkRequire(node: ESTree.VariableDeclarator | ESTree.AssignmentExpression, left: ESTree.Pattern, right?: ESTree.Expression | null) {
             if (
                 isPotentiallyProblematicLeft(left) &&
                 isPotentiallyProblematicRight(right)
@@ -96,17 +100,18 @@ module.exports = {
                 context.report({
                     node,
                     message: `Unexpected full import of restricted module '${
-                        right.arguments[0].value
+                        // @ts-ignore is needed because this codes comme from another repo, and i'm not sure why it's not working
+                        right?.arguments[0].value
                     }'.`
                 });
             }
         }
 
-        function checkVariableDeclarator(node) {
+        function checkVariableDeclarator(node: ESTree.VariableDeclarator ) {
             checkRequire(node, node.id, node.init);
         }
 
-        function checkAssignmentExpression(node) {
+        function checkAssignmentExpression(node: ESTree.AssignmentExpression) {
             checkRequire(node, node.left, node.right);
         }
 
@@ -117,3 +122,5 @@ module.exports = {
         };
     }
 };
+
+export default rule;

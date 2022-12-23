@@ -3,7 +3,6 @@
     "author": "Groupe Sharegate inc.",
     "version": "0.0.0",
     "description": "Sharegate recommended stylelint config.",
-    "main": "index.js",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/alexasselin008/poc-web-configs.git",
@@ -17,13 +16,30 @@
         "config",
         "css"
     ],
+    "publishConfig": {
+        "access": "public"
+    },
+    "type": "module",
+    "main": "./dist/index.js",
+    "module": "./dist/index.mjs",
+    "types": "./dist/index.d.ts",
+    "exports": {
+        ".": {
+            "module": "./dist/index.mjs",
+            "require": "./dist/index.js",
+            "types": "./dist/index.d.ts"
+        }
+    },
+    "scripts": {
+        "build": "tsup index.ts",
+        "clean": "rimraf dist",
+        "typecheck": "tsc --noEmit",
+        "lint": "eslint --ext .js,.jsx,.ts,.tsx ."
+    },
     "peerDependencies": {
         "stylelint": ">=14.10.0"
     },
     "dependencies": {
         "stylelint-config-recommended": "^9"
-    },
-    "publishConfig": {
-        "access": "public"
     }
 }

@@ -1,5 +1,6 @@
-/** @type {import('eslint').Rule.RuleModule} */
-module.exports = {
+import { Rule } from "eslint";
+
+const rule: Rule.RuleModule = {
     meta: {
         docs: {
             description:
@@ -35,3 +36,5 @@ module.exports = {
         };
     }
 };
+
+export default rule;

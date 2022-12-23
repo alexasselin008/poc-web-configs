@@ -1,5 +1,6 @@
-/** @type {import('stylelint').Config} */
-module.exports = {
+import type { Config } from "stylelint";
+
+const config: Config = {
     extends: "stylelint-config-recommended",
     rules: {
         // Avoid Errors
@@ -95,3 +96,5 @@ module.exports = {
         "media-feature-range-operator-space-after": "always"
     }
 };
+
+export default config;

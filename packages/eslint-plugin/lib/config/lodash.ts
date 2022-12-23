@@ -1,5 +1,6 @@
-/** @type {import('eslint').Linter.Config} */
-module.exports = {
+import type { Linter } from "eslint";
+
+const config: Linter.Config = {
     plugins: ["lodash"],
     rules: {
         // https://github.com/wix/eslint-plugin-lodash
@@ -7,3 +8,5 @@ module.exports = {
         "lodash/chaining": ["error", "never"]
     }
 };
+
+export default config;

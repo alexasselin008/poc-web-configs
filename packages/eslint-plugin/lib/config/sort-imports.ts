@@ -1,5 +1,6 @@
-/** @type {import('eslint').Linter.Config} */
-module.exports = {
+import type { Linter } from "eslint";
+
+const config: Linter.Config = {
     plugins: ["sort-imports-es6-autofix"],
     rules: {
         // https://github.com/marudor/eslint-plugin-sort-imports-es6-autofix
@@ -13,3 +14,5 @@ module.exports = {
         ]
     }
 };
+
+export default config;

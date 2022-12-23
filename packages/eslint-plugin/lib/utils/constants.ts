@@ -1,4 +1,4 @@
-const FileStartLocation = {
+export const FileStartLocation = {
     start: {
         line: 0,
         column: 0
@@ -7,8 +7,4 @@ const FileStartLocation = {
         line: 0,
         column: 0
     }
-};
-
-module.exports = {
-    FileStartLocation
 };

@@ -3,7 +3,6 @@
   "author": "Groupe Sharegate inc.",
   "description": "Sharegates ESLint rules and configs.",
   "version": "0.0.0",
-  "main": "lib/index.js",
   "license": "Apache-2.0",
   "keywords": [
     "sharegate",
@@ -18,21 +17,44 @@
     "url": "git+https://github.com/alexasselin008/poc-web-configs.git",
     "directory": "packages/eslint-plugin"
   },
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "module": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsup lib",
+    "clean": "rimraf dist",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx ."
+  },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "*",
     "@next/eslint-plugin-next": "*",
     "eslint-plugin-sort-imports-es6-autofix": "*",
     "eslint-plugin-import": "*",
-    "eslint-plugin-jsx-a11y": "*",
+    "eslint-plugin-jsx-a11y": "6.6.1",
     "eslint-plugin-react": "*",
     "eslint-plugin-react-hooks": "*",
     "eslint-plugin-lodash": "*",
     "requireindex": "1.2.0"
   },
+  "devDependencies": {
+    "typescript": "4.9.4",
+    "@types/eslint": "8.4.10",
+    "@types/requireindex": "1.2.0",
+    "@alexasselin/typescript-config": "*"
+  },
   "peerDependencies": {
     "eslint": "^7 || ^8"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }

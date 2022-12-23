@@ -3,15 +3,11 @@
   "author": "Groupe Sharegate inc.",
   "description": "Sharegate recommended Browserslist config.",
   "version": "0.0.0",
-  "main": "index.js",
   "license": "Apache-2.0",
   "keywords": [
     "sharegate",
     "browserslist"
   ],
-  "scripts": {
-    "lint": "next lint"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/alexasselin008/poc-web-configs.git",
@@ -19,5 +15,22 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "module": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsup index.ts",
+    "clean": "rimraf dist",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx ."
   }
 }

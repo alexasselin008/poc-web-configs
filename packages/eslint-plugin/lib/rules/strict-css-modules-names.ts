@@ -1,27 +1,31 @@
-const { splitPath } = require("../utils/path");
-const { getNodeSource } = require("../utils/node");
-const { getFileName } = require("../utils/context");
-const { parse, sep } = require("path");
+import { splitPath, sanitizePath } from "../utils/path";
+import { getFileName } from "../utils/context";
+import { parse, sep } from "path";
+import { Rule } from "eslint";
+import ESTree from "estree";
 
-/** @type {import('eslint').Rule.RuleModule} */
-module.exports = {
+const rule: Rule.RuleModule = {
     meta: {
         docs: {
             description: "CSS Modules should have the same name as a component and located in the same folder",
             category: "Strict",
             recommended: false
         },
-        fixable: null
     },
 
     create: function(context) {
         const parsedPath = parse(getFileName(context));
 
-        const isCssModule = source => {
+        const getNodeSource = (node: ESTree.ImportDeclaration) => {
+            return sanitizePath(node.source != null ? node.source.value as string : "");
+        };
+
+        
+        const isCssModule = (source: string) => {
             return source.endsWith(".module.css");
         };
 
-        const isStylesheetInSameFolder = source => {
+        const isStylesheetInSameFolder = (source: string) => {
             return splitPath(source).length <= 2; // ./myImage.svg
         };
 
@@ -34,18 +38,18 @@ module.exports = {
 
                     if (!isStylesheetInSameFolder(importSource)) {
                         // ./myImage.svg
-                        context.report(
+                        context.report({
                             node,
-                            `CSS Modules should be associated to one component and located in the same folder ./${validCssFilename}. If the module is already used by another component, create a new one.`
-                        );
+                            message: `CSS Modules should be associated to one component and located in the same folder ./${validCssFilename}. If the module is already used by another component, create a new one.`
+                        });
                     } else {
                         const validCssPath = `.${sep}${validCssFilename}`;
                         const isNamingValid = importSource === validCssPath;
                         if (!isNamingValid) {
-                            context.report(
+                            context.report({
                                 node,
-                                `CSS Modules should be associated to one component and should be named ./${validCssFilename}. If the module is already used by another component, create a new one.`
-                            );
+                                message: `CSS Modules should be associated to one component and should be named ./${validCssFilename}. If the module is already used by another component, create a new one.`
+                            });
                         }
                     }
                 }
@@ -53,3 +57,5 @@ module.exports = {
         };
     }
 };
+
+export default rule;

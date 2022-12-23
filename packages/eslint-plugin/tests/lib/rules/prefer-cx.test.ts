@@ -2,14 +2,14 @@
 //------------------------------------------------------------------------------
 // Requirements
 //------------------------------------------------------------------------------
-const rule = require("../../../lib/rules/prefer-cx"),
-    RuleTester = require("eslint").RuleTester;
+import { RuleTester, Linter } from "eslint";
+import rule from "../../../lib/rules/prefer-cx";
 
 //------------------------------------------------------------------------------
 // Tests
 //------------------------------------------------------------------------------
 const ruleTester = new RuleTester();
-const parserOptions = { ecmaVersion: 6, sourceType: "module" };
+const parserOptions: Linter.ParserOptions = { ecmaVersion: 6, sourceType: "module" };
 const errors = [
     {
         type: "ImportDeclaration",

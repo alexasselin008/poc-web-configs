@@ -1,7 +1,7 @@
-const postcss = require("postcss");
+import postcss, { PluginCreator } from "postcss";
+import { pluginOptions } from "postcss-preset-env";
 
-/** @type {import('postcss-preset-env').pluginOptions} */
-const PRESET_ENV_OPTIONS = {
+const PRESET_ENV_OPTIONS: pluginOptions = {
     autoprefixer: {
         flexbox: "no-2009"
     },
@@ -37,18 +37,23 @@ const PXTOREM_OPTIONS = {
     ]
 };
 
-/** @type {import('postcss').PluginCreator} */
-const plugin = () => {
+const DEFAULT_OPTIONS = {	
+    presetEnvOptions: PRESET_ENV_OPTIONS,
+    pxtoremOptions: PXTOREM_OPTIONS
+}
+
+const plugin: PluginCreator<typeof DEFAULT_OPTIONS> = ({presetEnvOptions, pxtoremOptions} = DEFAULT_OPTIONS) => {
+    
     return {
         postcssPlugin: "@alexasselin/postcss-plugin",
         ...postcss([
             require("postcss-flexbugs-fixes"),
-            require("postcss-preset-env")(PRESET_ENV_OPTIONS),
-            require("postcss-pxtorem")(PXTOREM_OPTIONS)
+            require("postcss-preset-env")(presetEnvOptions),
+            require("postcss-pxtorem")(pxtoremOptions)
         ])
     };
 };
 
 plugin.postcss = true;
 
-module.exports = plugin;
+export default plugin;

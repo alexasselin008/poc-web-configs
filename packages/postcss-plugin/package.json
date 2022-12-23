@@ -18,6 +18,23 @@
         "postcss-plugin",
         "css"
     ],
+    "type": "module",
+    "main": "./dist/index.js",
+    "module": "./dist/index.mjs",
+    "types": "./dist/index.d.ts",
+    "exports": {
+        ".": {
+            "module": "./dist/index.mjs",
+            "require": "./dist/index.js",
+            "types": "./dist/index.d.ts"
+        }
+    },
+    "scripts": {
+        "build": "tsup index.ts",
+        "clean": "rimraf dist",
+        "typecheck": "tsc --noEmit",
+        "lint": "eslint --ext .js,.jsx,.ts,.tsx ."
+    },
     "dependencies": {
         "postcss-flexbugs-fixes": "5.0.2",
         "postcss-preset-env": "7.8.3",
@@ -25,5 +42,8 @@
     },
     "peerDependencies": {
         "postcss": "^8.0.0"
+    },
+    "devDependencies": {
+        "@types/postcss-preset-env": "7.7.0"
     }
 }

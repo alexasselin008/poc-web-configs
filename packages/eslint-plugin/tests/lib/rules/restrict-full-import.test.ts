@@ -3,9 +3,8 @@
 //------------------------------------------------------------------------------
 // Requirements
 //------------------------------------------------------------------------------
-
-const rule = require("../../../lib/rules/restrict-full-import"),
-    RuleTester = require("eslint").RuleTester;
+import { RuleTester, Linter } from "eslint";
+import rule from "../../../lib/rules/restrict-full-import";
 
 //------------------------------------------------------------------------------
 // Tests
@@ -13,7 +12,7 @@ const rule = require("../../../lib/rules/restrict-full-import"),
 
 const ruleTester = new RuleTester();
 
-const parserOptions = {
+const parserOptions: Linter.ParserOptions = {
     ecmaVersion: 2018,
     sourceType: "module"
 };

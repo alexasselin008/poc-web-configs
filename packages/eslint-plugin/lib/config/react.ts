@@ -1,5 +1,6 @@
-/** @type {import('eslint').Linter.Config} */
-module.exports = {
+import type { Linter } from "eslint";
+
+const config: Linter.Config = {
     plugins: ["jsx-a11y", "react", "react-hooks"],
     parserOptions: {
         ecmaFeatures: {
@@ -93,3 +94,5 @@ module.exports = {
         "react-hooks/rules-of-hooks": "warn"
     }
 };
+
+export default config;

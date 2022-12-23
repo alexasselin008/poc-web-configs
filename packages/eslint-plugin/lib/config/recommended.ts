@@ -1,5 +1,6 @@
-/** @type {import('eslint').Linter.Config} */
-module.exports = {
+import type { Linter } from "eslint";
+
+const config: Linter.Config = {
     plugins: ["import"],
     extends: ["eslint:recommended"],
     parserOptions: {
@@ -168,3 +169,5 @@ module.exports = {
         "import/no-duplicates": "warn"
     }
 };
+
+export default config;
