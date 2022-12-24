@@ -12,4 +12,5 @@ Proof of concept of a repo containing Common configurations for building web app
 Todos: 
 - [ ] Add a readme for each package
 - [ ] Add a readme for the mono repo
-- [ ] Fix lint and test on a built applciation (eslint ignore? + jest failing on tsx files (need ts-jest https://www.npmjs.com/package/ts-jest)
+- [ ] Fix lint to not run on dist folder
+- [X] Fix tests to support tsx files (ts-jest)
