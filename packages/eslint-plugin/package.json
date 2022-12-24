@@ -35,7 +35,8 @@
     "build": "tsup lib",
     "clean": "rimraf dist",
     "typecheck": "tsc --noEmit",
-    "lint": "eslint --ext .js,.jsx,.ts,.tsx ."
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx .",
+    "test": "jest"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "*",
