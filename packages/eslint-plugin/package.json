@@ -33,10 +33,7 @@
   },
   "scripts": {
     "build": "tsup lib",
-    "clean": "rimraf dist",
-    "typecheck": "tsc --noEmit",
-    "lint": "eslint --ext .js,.jsx,.ts,.tsx .",
-    "test": "jest"
+    "clean": "rimraf dist"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "*",

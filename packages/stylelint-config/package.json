@@ -32,9 +32,7 @@
     },
     "scripts": {
         "build": "tsup index.ts",
-        "clean": "rimraf dist",
-        "typecheck": "tsc --noEmit",
-        "lint": "eslint --ext .js,.jsx,.ts,.tsx ."
+        "clean": "rimraf dist"
     },
     "peerDependencies": {
         "stylelint": ">=14.10.0"
