@@ -14,8 +14,6 @@
   },
   "devDependencies": {
     "@alexasselin/eslint-config": "*",
-    "@changesets/changelog-github": "0.4.8",
-    "@changesets/cli": "2.26.0",
     "jest": "29.3.1",
     "lerna": "^6.1.0",
     "rimraf": "3.0.2",
