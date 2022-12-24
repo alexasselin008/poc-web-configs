@@ -14,3 +14,4 @@ Todos:
 - [ ] Add a readme for the mono repo
 - [ ] Fix lint to not run on dist folder
 - [X] Fix tests to support tsx files (ts-jest)
+- [ ] Add nx caching to speed up build/test
