@@ -1,16 +1,11 @@
 {
     "$schema": "https://json.schemastore.org/eslintrc",
     "root": true,
-    "extends": [
-        "plugin:@alexasselin/eslint-plugin/recommended",
-        "plugin:@alexasselin/eslint-plugin/typescript"
-    ],
+    "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
+    "parser": "@typescript-eslint/parser",
+    "plugins": ["@typescript-eslint"],
     "env": {
         "commonjs": true,
         "node": true
-    },
-    "parserOptions": { 
-        // Required for certain syntax usages
-        "ecmaVersion": 2020
     }
 }

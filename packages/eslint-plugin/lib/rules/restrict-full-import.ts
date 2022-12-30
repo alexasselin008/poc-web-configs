@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 import { Rule } from "eslint";
 import ESTree from "estree";
 
@@ -83,6 +84,7 @@ const rule: Rule.RuleModule = {
                 context.report({
                     node:
                         specifiers.length > 1
+                            // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
                             ? specifiers.find(isFullImportSpecifier)!
                             : node,
                     message: `Unexpected full import of restricted module '${
@@ -123,4 +125,4 @@ const rule: Rule.RuleModule = {
     }
 };
 
-export default rule;
+export = rule;

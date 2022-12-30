@@ -7,4 +7,4 @@ const config: Linter.Config = {
     ]
 };
 
-export default config;
+export = config;

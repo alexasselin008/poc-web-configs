@@ -1,5 +1,8 @@
 import postcss, { PluginCreator } from "postcss";
-import { pluginOptions } from "postcss-preset-env";
+import postcssPresetEnv, { pluginOptions } from "postcss-preset-env";
+import postcssFlexBugsFixes from "postcss-flexbugs-fixes"
+import postcssPxtorem from "postcss-pxtorem";
+
 
 const PRESET_ENV_OPTIONS: pluginOptions = {
     autoprefixer: {
@@ -47,9 +50,9 @@ const plugin: PluginCreator<typeof DEFAULT_OPTIONS> = ({presetEnvOptions, pxtore
     return {
         postcssPlugin: "@alexasselin/postcss-plugin",
         ...postcss([
-            require("postcss-flexbugs-fixes"),
-            require("postcss-preset-env")(presetEnvOptions),
-            require("postcss-pxtorem")(pxtoremOptions)
+            postcssFlexBugsFixes(),
+            postcssPresetEnv(presetEnvOptions),
+            postcssPxtorem(pxtoremOptions)
         ])
     };
 };
