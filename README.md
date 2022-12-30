@@ -3,7 +3,7 @@ Proof of concept of a repo containing Common configurations for building web app
 
 - [X] All 5 sg webconfig
 - [X] All converted to typescript
-- [X] Build in esm and cjs
+- [] Build in esm and cjs (know how, but eslint doesnt support ESM yet, bit awkward)
 - [X] Use lerna/nx for mono repo scripting
 - [ ] Use lerna to add versionning
 - [ ] Use github ci
