@@ -6,4 +6,4 @@ const plugin: ESLint.Plugin = {
     configs: requireIndex("./lib/config")
 }
 
-export default plugin;
+export = plugin;

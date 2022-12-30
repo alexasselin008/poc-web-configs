@@ -58,4 +58,4 @@ const rule: Rule.RuleModule = {
     }
 };
 
-export = rule;
+export default rule;
