@@ -1,7 +1,9 @@
+/* postcss-pxtorem doesn't have typings, so we created this file to add them for what we need*/
+
 declare module "postcss-pxtorem" {
+    import { Input, PluginCreator as PostCSSPlugin } from "postcss";
+    
     namespace postcssPxToRem {
-        import {Input, PluginCreator as PostCSSPlugin} from "postcss";
-        
         export interface pluginOptions {
             propList?: string[];
             rootValue?: number | ((input:Input) => number),  

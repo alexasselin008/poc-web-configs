@@ -6,4 +6,4 @@ const config: string | string[] = [
     "not op_mini all"
 ];
 
-export default config;
+export = config;

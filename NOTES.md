@@ -3,3 +3,6 @@
 Browserlist not having perfect typings
 
 Installer lerna
+
+
+Il y a trop de eslint ignore???

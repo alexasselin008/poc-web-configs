@@ -1,4 +1,4 @@
-import postcss, { PluginCreator } from "postcss";
+import type { PluginCreator } from "postcss";
 import postcssPresetEnv, { pluginOptions } from "postcss-preset-env";
 import postcssFlexBugsFixes from "postcss-flexbugs-fixes"
 import postcssPxtorem from "postcss-pxtorem";
@@ -49,14 +49,14 @@ const plugin: PluginCreator<typeof DEFAULT_OPTIONS> = ({presetEnvOptions, pxtore
     
     return {
         postcssPlugin: "@alexasselin/postcss-plugin",
-        ...postcss([
+        plugins: [
             postcssFlexBugsFixes(),
             postcssPresetEnv(presetEnvOptions),
             postcssPxtorem(pxtoremOptions)
-        ])
+        ]
     };
 };
 
 plugin.postcss = true;
 
-export default plugin;
+export = plugin;

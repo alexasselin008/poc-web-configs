@@ -6,7 +6,8 @@ Proof of concept of a repo containing Common configurations for building web app
 - [] Build in esm and cjs (know how, but eslint doesnt support ESM yet, bit awkward)
 - [X] Use lerna/nx for mono repo scripting
 - [ ] Use lerna to add versionning
-- [ ] Use github ci
+- [X] Use github ci
+- [ ] Use github ci on pull request
 - [ ] Use github action for release
 
 Todos: 

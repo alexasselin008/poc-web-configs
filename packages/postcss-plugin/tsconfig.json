@@ -5,8 +5,9 @@
     "outDir": "dist",
     "declaration": true,
     "target": "ES6",
+    "module": "commonjs",
     "typeRoots": ["./types"]
   },
-  "include": ["index.ts"],
+  "include": ["index.ts", "./types"],
   "exclude": ["dist"]
 }
