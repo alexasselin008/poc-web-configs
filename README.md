@@ -14,6 +14,7 @@ Todos:
 - [ ] Add a readme for the mono repo
 - [X] Fix tests to support tsx files (ts-jest)
 - [ ] Add lerna version to pull request description
+- [ ] JS doc comments for each eslint rules pointing to the rule documentation
 
 Excluded from POC: 
 - Build in esm and cjs:
