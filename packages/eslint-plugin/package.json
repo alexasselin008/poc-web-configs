@@ -24,7 +24,8 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "clean": "rimraf dist"
+    "clean": "rimraf dist",
+    "test": "jest --config=../../jest.config.ts"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "*",
@@ -38,7 +39,6 @@
     "requireindex": "1.2.0"
   },
   "devDependencies": {
-    "typescript": "4.9.4",
     "@types/eslint": "8.4.10",
     "@types/requireindex": "1.2.0",
     "@alexasselin/typescript-config": "*"
