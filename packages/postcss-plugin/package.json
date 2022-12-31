@@ -1,5 +1,5 @@
 {
-    "name": "@alexasselin/postcss-plugin",
+    "name": "@alexasselin008/postcss-plugin",
     "author": "Groupe Sharegate inc.",
     "version": "0.0.0",
     "description": "Sharegate recommended typescript config.",
@@ -35,6 +35,6 @@
     "devDependencies": {
         "@types/postcss-preset-env": "7.7.0",
         "@types/postcss-flexbugs-fixes": "4.2.1",
-        "@alexasselin/typescript-config": "*"
+        "@alexasselin008/typescript-config": "*"
     }
 }
