@@ -1,7 +1,7 @@
 {
     "name": "@alexasselin/stylelint-config",
     "author": "Groupe Sharegate inc.",
-    "version": "1.0.0",
+    "version": "0.0.0",
     "description": "Sharegate recommended stylelint config.",
     "repository": {
         "type": "git",
@@ -29,7 +29,7 @@
         "stylelint": ">=14.10.0"
     },
     "dependencies": {
-        "@alexasselin/typescript-config": "^1.0.0",
-        "stylelint-config-recommended": "^9"
+        "stylelint-config-recommended": "^9",
+        "@alexasselin/typescript-config": "*"
     }
 }
