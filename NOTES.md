@@ -34,9 +34,9 @@ avantage de publish dnas un workflow
 ensure que c'Est buildé avant
 
 
-yarn new-version
-yarn release
-yarn push-release <yyyy-MM-dd>
+yarn new-version // lerna version --exact --no-push // create tags, update package.json
+yarn release // lerna publish from-package --exact --loglevel verbose // publish sur NPM
+yarn push-release <yyyy-MM-dd> // git push, create annotation tag, push tag
 
 
 
@@ -63,10 +63,11 @@ nécessite beaucoup de custom stock a faire avec lerna
 
 
 
-npx changeset // équivalent à add
-npx changeset version
-npx changeset publish
+npx changeset // équivalent à add. demande les versions à changé
+npx changeset version // change les packages.json et les version des packages. doit commit avant de publish
+npx changeset publish // publish sur NPM (dois pusher les tags quand même après)
 
+yarn release devrait build et test et call publish
 
 
 
