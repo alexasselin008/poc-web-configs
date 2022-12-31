@@ -9,6 +9,7 @@
     "clean": "lerna run clean && rimraf node_modules",
     "lint": "eslint \"packages/**\" --ext .ts,.tsx",
     "test": "lerna run test",
+    "add-changeset": "changeset",
     "release": "npm run build && changeset publish"
   },
   "devDependencies": {
