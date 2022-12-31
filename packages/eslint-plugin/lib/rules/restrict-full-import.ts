@@ -7,7 +7,8 @@ const rule: Rule.RuleModule = {
         docs: {
             description: "Prevent importing the entirety of a package.",
             category: "Best Practices",
-            recommended: false
+            recommended: false,
+            url: "https://github.com/alexasselin008/poc-web-configs/blob/main/packages/eslint-plugin/docs/rules/restrict-full-import.md"
         },
         
         schema: [

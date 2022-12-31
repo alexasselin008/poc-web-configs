@@ -6,7 +6,8 @@ const rule: Rule.RuleModule = {
             description:
                 "Prefer cx over classnames as the name of classnames imports.",
             category: "Strict Imports",
-            recommended: false
+            recommended: false,
+            url: "https://github.com/alexasselin008/poc-web-configs/blob/main/packages/eslint-plugin/docs/rules/prefer-cx.md"
         },
         fixable: "code",
         schema: []
