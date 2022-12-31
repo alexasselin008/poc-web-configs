@@ -1,5 +1,6 @@
 # poc-web-configs
 Proof of concept of a repo containing Common configurations for building web apps at ShareGate
+[![CI](https://github.com/alexasselin008/poc-web-configs/actions/workflows/ci.yml/badge.svg)](https://github.com/alexasselin008/poc-web-configs/actions/workflows/ci.yml)
 
 - [X] All 5 ShareGate web configs
 - [X] All converted to typescript
