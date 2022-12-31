@@ -1,5 +1,5 @@
 {
-  "name": "@alexasselin008/eslint-plugin",
+  "name": "@alexasselin/eslint-plugin1",
   "author": "Groupe Sharegate inc.",
   "description": "Sharegates ESLint rules and configs.",
   "version": "0.0.0",
@@ -41,7 +41,7 @@
   "devDependencies": {
     "@types/eslint": "8.4.10",
     "@types/requireindex": "1.2.0",
-    "@alexasselin008/typescript-config": "*"
+    "@alexasselin/typescript-config1": "*"
   },
   "peerDependencies": {
     "eslint": "^7 || ^8"

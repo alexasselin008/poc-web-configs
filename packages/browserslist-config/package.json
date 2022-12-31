@@ -1,5 +1,5 @@
 {
-  "name": "@alexasselin008/browserslist-config",
+  "name": "@alexasselin/browserslist-config1",
   "author": "Groupe Sharegate inc.",
   "description": "Sharegate recommended Browserslist config.",
   "version": "0.0.0",
@@ -23,6 +23,6 @@
     "clean": "rimraf dist"
   },
   "devDependencies": {
-      "@alexasselin008/typescript-config": "*"
+      "@alexasselin/typescript-config1": "*"
   }
 }

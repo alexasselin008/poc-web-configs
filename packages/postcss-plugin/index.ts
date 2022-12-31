@@ -48,7 +48,7 @@ const DEFAULT_OPTIONS = {
 const plugin: PluginCreator<typeof DEFAULT_OPTIONS> = ({presetEnvOptions, pxtoremOptions} = DEFAULT_OPTIONS) => {
     
     return {
-        postcssPlugin: "@alexasselin008/postcss-plugin",
+        postcssPlugin: "@alexasselin/postcss-plugin1",
         plugins: [
             postcssFlexBugsFixes(),
             postcssPresetEnv(presetEnvOptions),
