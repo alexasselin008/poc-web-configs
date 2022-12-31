@@ -33,6 +33,3 @@ yarn-error.log*
 .turbo
 
 dist
-
-# remove changelogs
-CHANGELOG.md
