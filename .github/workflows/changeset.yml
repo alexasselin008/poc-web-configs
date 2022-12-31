@@ -34,7 +34,6 @@ jobs:
         uses: changesets/action@v1
         with:
           commit: "ci(changesets): version packages"
-          setupGitUser: false
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
