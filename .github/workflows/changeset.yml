@@ -27,12 +27,13 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: "npm"
       - run: npm ci
+      
       - name: Create release Pull Request or publish to NPM
         id: changesets
         uses: changesets/action@v1
         with:
           commit: "ci(changesets): version packages"
-          title: "Changeset: New Version",
+          title: "Changeset: New Version"
           # This expects you to have a script called release which does a build for your packages and calls changeset publish
           publish: npm run release
         env:
