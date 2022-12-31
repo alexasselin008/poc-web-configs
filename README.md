@@ -13,7 +13,9 @@ Todos:
 - [ ] Add a readme for each package
 - [ ] Add a readme for the mono repo
 - [X] Fix tests to support tsx files (ts-jest)
-- [ ] Add nx caching to speed up build/test
 
 Excluded from POC: 
-- [ ] Build in esm and cjs (know how, but eslint doesnt support ESM yet, bit awkward)
+- Build in esm and cjs:
+  - Fairly easy to do with `tsup`, but eslint doesn't support esm yet, so doesn't seem worth it.
+- [ ] Add nx caching to speed up build/test
+  - Not sure if it's worth it, since the build is pretty fast. But it might be a good idea to have it in the future.
