@@ -9,7 +9,8 @@ const rule: Rule.RuleModule = {
         docs: {
             description: "CSS Modules should have the same name as a component and located in the same folder",
             category: "Strict",
-            recommended: false
+            recommended: false,
+            url: "https://github.com/alexasselin008/poc-web-configs/blob/main/packages/eslint-plugin/docs/rules/strict-css-modules-names.md"
         },
     },
 
