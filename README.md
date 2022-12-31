@@ -6,13 +6,14 @@ Proof of concept of a repo containing Common configurations for building web app
 - [X] Use lerna for mono repo scripting
 - [ ] Use lerna to add versioning
 - [X] Use github ci
-- [ ] Use github ci on pull request
+- [X] Use github ci on pull request
 - [ ] Use github action for release
 
 Todos: 
 - [ ] Add a readme for each package
 - [ ] Add a readme for the mono repo
 - [X] Fix tests to support tsx files (ts-jest)
+- [ ] Add lerna version to pull request description
 
 Excluded from POC: 
 - Build in esm and cjs:
