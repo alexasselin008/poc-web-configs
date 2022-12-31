@@ -2,7 +2,7 @@
   "name": "@alexasselin/browserslist-config",
   "author": "Groupe Sharegate inc.",
   "description": "Sharegate recommended Browserslist config.",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "license": "Apache-2.0",
   "keywords": [
     "sharegate",
@@ -23,6 +23,6 @@
     "clean": "rimraf dist"
   },
   "devDependencies": {
-    "@alexasselin/typescript-config": "^1.0.0"
+      "@alexasselin/typescript-config": "*"
   }
 }
