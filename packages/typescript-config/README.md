@@ -73,7 +73,7 @@ To start, create a tsconfig.json in the root of your project.
 }
 ```
 
-### All Other Projects
+### All Other TypeScript Projects
 
 ```json
 {
