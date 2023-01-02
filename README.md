@@ -5,17 +5,17 @@ Proof of concept of a repo containing Common configurations for building web app
 - [X] All 5 ShareGate web configs
 - [X] All converted to typescript
 - [X] Use lerna for mono repo scripting
-- [ ] Use lerna to add versioning
+- [ ] Use changesets to add versioning
 - [X] Use github ci
 - [X] Use github ci on pull request
 - [ ] Use github action for release
+- [ ] Replace lerna with pnpm?
 
 Todos: 
 - [ ] Add a readme for each package
 - [ ] Add a readme for the mono repo
 - [X] Fix tests to support tsx files (ts-jest)
-- [ ] Add lerna version to pull request description
-- [ ] JS doc comments for each eslint rules pointing to the rule documentation
+- [X] JS doc comments for each eslint rules pointing to the rule documentation
 
 Excluded from POC: 
 - Build in esm and cjs:
