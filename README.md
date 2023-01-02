@@ -6,10 +6,10 @@ Proof of concept of a repo containing Common configurations for building web app
 - [X] All 5 ShareGate web configs
 - [X] All converted to typescript
 - [X] Use lerna for mono repo scripting
-- [ ] Use changesets to add versioning
+- [X] Use changesets to add versioning
 - [X] Use github ci
 - [X] Use github ci on pull request
-- [ ] Use github action for release
+- [X] Use github action for release
 - [ ] Replace lerna with pnpm?
 
 Todos: 
