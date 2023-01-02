@@ -1,7 +1,7 @@
 {
     "name": "@alexasselin/postcss-plugin1",
     "author": "Groupe Sharegate inc.",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Sharegate recommended typescript config.",
     "publishConfig": {
         "access": "public"
