@@ -1,16 +1,12 @@
 {
   "name": "poc-web-configs",
   "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
   "scripts": {
-    "build": "lerna run build",
-    "clean": "lerna run clean && rimraf node_modules",
+    "build": "pnpm --recursive build",
+    "clean": "pnpm --recursive clean && rimraf node_modules pnpm-lock.yaml",
     "lint": "eslint \"packages/**\" --ext .ts,.tsx",
-    "test": "lerna run test",
     "add-changeset": "changeset",
-    "release": "npm run build && changeset publish"
+    "release": "pnpm build && changeset publish"
   },
   "devDependencies": {
     "@changesets/cli": "^2.26.0",
