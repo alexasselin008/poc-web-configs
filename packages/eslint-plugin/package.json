@@ -25,7 +25,8 @@
   "scripts": {
     "build": "tsc",
     "clean": "rimraf dist node_modules",
-    "test": "jest --config=../../jest.config.ts"
+    "test": "jest --config=../../jest.config.ts",
+    "clean-dist": "rimraf dist"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "*",

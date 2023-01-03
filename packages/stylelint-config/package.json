@@ -23,7 +23,8 @@
     "types": "./dist/index.d.ts",
     "scripts": {
         "build": "tsc",
-        "clean": "rimraf dist node_modules"
+        "clean": "rimraf dist node_modules",
+        "clean-dist": "rimraf dist"
     },
     "peerDependencies": {
         "stylelint": ">=14.10.0"

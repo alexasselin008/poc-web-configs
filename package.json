@@ -3,7 +3,9 @@
   "private": true,
   "scripts": {
     "build": "pnpm --recursive build",
+    "test": "pnpm --recursive test",
     "clean": "pnpm --recursive clean && rimraf node_modules pnpm-lock.yaml",
+    "clean-dist": "pnpm --recursive clean-dist",
     "lint": "eslint \"packages/**\" --ext .ts,.tsx",
     "add-changeset": "changeset",
     "release": "pnpm build && changeset publish"
