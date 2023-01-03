@@ -23,7 +23,7 @@
     "types": "./dist/index.d.ts",
     "scripts": {
         "build": "tsc",
-        "clean": "rimraf dist"
+        "clean": "rimraf dist node_modules"
     },
     "peerDependencies": {
         "stylelint": ">=14.10.0"
@@ -31,5 +31,8 @@
     "dependencies": {
         "stylelint-config-recommended": "^9",
         "@alexasselin/typescript-config1": "*"
+    },
+    "devDependencies": {
+        "stylelint": ">=14.10.0"
     }
 }
