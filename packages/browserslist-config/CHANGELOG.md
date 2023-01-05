@@ -1,5 +1,11 @@
 # @alexasselin/browserslist-config1
 
+## 1.2.0
+
+### Minor Changes
+
+- 7d22fff: Bump
+
 ## 1.1.0
 
 ### Minor Changes

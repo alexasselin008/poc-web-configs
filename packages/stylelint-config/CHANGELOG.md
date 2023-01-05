@@ -1,5 +1,11 @@
 # @alexasselin/stylelint-config1
 
+## 1.3.0
+
+### Minor Changes
+
+- 7d22fff: Bump
+
 ## 1.2.0
 
 ### Minor Changes
