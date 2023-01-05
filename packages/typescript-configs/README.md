@@ -1,6 +1,6 @@
-# `@sharegate/typescript-config`
+# `@sharegate/typescript-configs`
 
-[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](../../LICENSE.md) [![npm version](https://badge.fury.io/js/@sharegate%typescript-config.svg)](https://badge.fury.io/js/@sharegate%typescript-config.svg)
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](../../LICENSE.md) [![npm version](https://badge.fury.io/js/@sharegate%typescript-configs.svg)](https://badge.fury.io/js/@sharegate%typescript-configs.svg)
 
 This packages provides a base TypeScript configuration depending on the JavaScript runtime environment which you intend to run your code in. 
 These are tsconfig.json files which your project extends from which simplifies your tsconfig.json by handling the runtime support.
@@ -11,12 +11,12 @@ Install the package.
 
 **With npm**
 ```shell
-npm i --save-dev @sharegate/typescript-config
+npm i --save-dev @sharegate/typescript-configs
 ```
 
 **With yarn**
 ```shell
-yarn add --dev @sharegate/typescript-config
+yarn add --dev @sharegate/typescript-configs
 ```
 
 ## Usage
@@ -27,7 +27,7 @@ To start, create a tsconfig.json in the root of your project.
 
 ```json
 {
-  "extends": "@sharegate/typescript-config/cra.json",
+  "extends": "@sharegate/typescript-configs/cra.json",
   "compilerOptions": {
     "baseUrl": ".",
   },
@@ -40,7 +40,7 @@ To start, create a tsconfig.json in the root of your project.
 
 ```json
 {
-  "extends": "@sharegate/typescript-config/nextjs.json",
+  "extends": "@sharegate/typescript-configs/nextjs.json",
   "compilerOptions": {
     "baseUrl": ".",
   },
@@ -53,7 +53,7 @@ To start, create a tsconfig.json in the root of your project.
 
 ```json
 {
-  "extends": "@sharegate/typescript-config/react-library.json",
+  "extends": "@sharegate/typescript-configs/react-library.json",
   "compilerOptions": {
     "baseUrl": ".",
   },
@@ -66,7 +66,7 @@ To start, create a tsconfig.json in the root of your project.
 
 ```json
 {
-  "extends": "@sharegate/typescript-config/react.json",
+  "extends": "@sharegate/typescript-configs/react.json",
   "compilerOptions": {
     "baseUrl": ".",
   }
@@ -77,7 +77,7 @@ To start, create a tsconfig.json in the root of your project.
 
 ```json
 {
-  "extends": "@sharegate/typescript-config/base.json",
+  "extends": "@sharegate/typescript-configs/base.json",
   "compilerOptions": {
     "baseUrl": ".",
   }

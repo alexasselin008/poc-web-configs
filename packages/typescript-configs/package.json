@@ -1,12 +1,12 @@
 {
-    "name": "@alexasselin/typescript-config1",
+    "name": "@alexasselin/typescript-configs1",
     "author": "Groupe Sharegate inc.",
     "version": "1.0.1",
     "description": "Sharegate recommended typescript config.",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/alexasselin008/poc-web-configs.git",
-        "directory": "packages/typescript-config"
+        "directory": "packages/typescript-configs"
     },
     "license": "Apache-2.0",
     "keywords": [

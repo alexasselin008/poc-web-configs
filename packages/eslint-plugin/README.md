@@ -29,3 +29,8 @@ This plugin provides the following custom rules, which are included as appropria
 - [prefer-cx](docs/rules/prefer-cx.md): Prefer cx over classnames as the name of classnames imports.
 - [restrict-full-import](docs/rules/restrict-full-import.md): Prevent importing the entirety of a package.
 - [strict-css-modules-names](docs/rules/strict-css-modules-names.md): CSS modules should have the same file name (minus the file extension) as the scoped component and be located in the same folder.
+
+
+## License
+
+Copyright © 2023, GSoft inc. This code is licensed under the Apache License, Version 2.0. You may obtain a copy of this license at https://github.com/gsoft-inc/gsoft-license/blob/master/LICENSE.
