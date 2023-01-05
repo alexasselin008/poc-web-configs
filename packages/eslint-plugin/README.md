@@ -20,7 +20,32 @@ yarn add --dev @sharegate/eslint-plugin
 
 ## Usage
 
-TODO
+ShareGate’s ESLint configs come bundled in this package. In order to use them, you simply extend the relevant configuration in your project’s .eslintrc. For example, if you are developing an application using TypeScript and React, using third party like lodash  :
+```json  
+"extends": [ 
+  "plugin:@sharegate/recommended",
+  "plugin:@sharegate/sort-imports",
+  "plugin:@sharegate/typescript",
+  "plugin:@sharegate/react",
+  "plugin:@sharegate/lodash",
+]
+ ```
+
+## Provided Configurations
+
+Language-specific configs.
+| Language/Package Name | Config | Description |
+| --- | --- | --- |
+| JavaScript - [recommended](lib/config/recommended.ts) | "plugin:@sharegate/recommended" | Use this for all JavaScript/TypeScript projects. |
+| JavaScript - [sort-imports](lib/config/sort-imports.ts) | "plugin:@sharegate/sort-imports" | Use this for JavaScript/TypeScript projects. |
+| [typescript](lib/config/typescript.ts) | "plugin:@sharegate/typescript" | Use this for TypeScript projects. |
+| [react](lib/config/react.ts) | "plugin:@sharegate/react" | Use this for React projects. |
+| [nextjs](lib/config/nextjs.ts) |"plugin:@sharegate/nextjs" | Use this for NextJs projects. |
+
+Third-party-specific configs.
+| Third party | Config | Description |
+| --- | --- | --- |
+| [lodash](lib/config/lodash.ts) | "plugin:@sharegate/lodash" | Use this for projects using [lodash](https://lodash.com/).
 
 ## Plugin-Provided Rules 
 
@@ -29,7 +54,6 @@ This plugin provides the following custom rules, which are included as appropria
 - [prefer-cx](docs/rules/prefer-cx.md): Prefer cx over classnames as the name of classnames imports.
 - [restrict-full-import](docs/rules/restrict-full-import.md): Prevent importing the entirety of a package.
 - [strict-css-modules-names](docs/rules/strict-css-modules-names.md): CSS modules should have the same file name (minus the file extension) as the scoped component and be located in the same folder.
-
 
 ## License
 
