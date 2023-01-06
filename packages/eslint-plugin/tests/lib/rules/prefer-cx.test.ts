@@ -3,7 +3,7 @@
 // Requirements
 //------------------------------------------------------------------------------
 import { RuleTester, Linter } from "eslint";
-import rule from "../../../lib/rules/prefer-cx";
+import * as rule from "../../../lib/rules/prefer-cx";
 
 //------------------------------------------------------------------------------
 // Tests
