@@ -1,7 +1,7 @@
 # `poc-web-configs`
 Proof of concept of a repo containing common configurations for building web apps at ShareGate
 
-[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](./LICENSE.md) | [![CI](https://github.com/alexasselin008/poc-web-configs/actions/workflows/ci.yml/badge.svg)](https://github.com/alexasselin008/poc-web-configs/actions/workflows/ci.yml)
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](./LICENSE.md) [![CI](https://github.com/alexasselin008/poc-web-configs/actions/workflows/ci.yml/badge.svg)](https://github.com/alexasselin008/poc-web-configs/actions/workflows/ci.yml)
 
 ## Content of this POC
 
