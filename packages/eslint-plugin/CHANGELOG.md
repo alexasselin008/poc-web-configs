@@ -1,4 +1,4 @@
-# @alexasselin/eslint-plugin1
+# @alexasselin/eslint-plugin-1
 
 ## 1.2.0
 
