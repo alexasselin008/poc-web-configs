@@ -30,6 +30,16 @@ ShareGate’s ESLint configs come bundled in this package. In order to use them,
   "plugin:@sharegate/lodash",
 ]
  ```
+ 
+ If you want to use plugin-provided rules, you can do it like this:
+ ```json
+"plugins": [
+    "@sharegate"
+],
+"rules": {
+    "@sharegate/prefer-cx": "warn"
+}
+ ```
 
 ## Provided Configurations
 

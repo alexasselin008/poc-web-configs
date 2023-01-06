@@ -4,13 +4,13 @@ import ESTree from "estree";
 
 const rule: Rule.RuleModule = {
     meta: {
+        type: "suggestion",
         docs: {
             description: "Prevent importing the entirety of a package.",
             category: "Best Practices",
             recommended: false,
-            url: "https://github.com/alexasselin008/poc-web-configs/blob/main/packages/eslint-plugin/docs/rules/restrict-full-import.md"
+            url: "https://github.com/alexasselin008/poc-web-configs/blob/main/packages/eslint-plugin/docs/rules/restrict-full-import.md",
         },
-        
         schema: [
             {
                 restricted: {
@@ -126,4 +126,4 @@ const rule: Rule.RuleModule = {
     }
 };
 
-export default rule;
+export = rule;

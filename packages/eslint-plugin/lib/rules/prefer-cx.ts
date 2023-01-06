@@ -2,6 +2,7 @@ import { Rule } from "eslint";
 
 const rule: Rule.RuleModule = {
     meta: {
+        type: "suggestion",
         docs: {
             description:
                 "Prefer cx over classnames as the name of classnames imports.",
