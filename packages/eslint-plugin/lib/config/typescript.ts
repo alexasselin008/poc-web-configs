@@ -1,15 +1,16 @@
 import type { Linter } from "eslint";
+import { typescriptFiles } from "../utils/patterns";
 
 const config: Linter.Config = {
-    plugins: ["@typescript-eslint"],
-    extends: [
-        "plugin:@typescript-eslint/eslint-recommended",
-        "plugin:@typescript-eslint/recommended"
-    ],
     overrides: [
         {
+            files: typescriptFiles,
             parser: "@typescript-eslint/parser",
-            files: ["*.ts", "*.tsx"],
+            plugins: ["@typescript-eslint"],
+            extends: [
+                "plugin:@typescript-eslint/eslint-recommended",
+                "plugin:@typescript-eslint/recommended"
+            ],
             rules: {
                 // plugin:@typescript-eslint/recommended but warn instead of errors
                 "@typescript-eslint/ban-ts-comment": "warn",
