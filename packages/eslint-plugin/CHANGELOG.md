@@ -1,5 +1,11 @@
 # @alexasselin/eslint-plugin-1
 
+## 2.1.0
+
+### Minor Changes
+
+- 096469a: removed requireindex
+
 ## 2.0.0
 
 ### Major Changes
