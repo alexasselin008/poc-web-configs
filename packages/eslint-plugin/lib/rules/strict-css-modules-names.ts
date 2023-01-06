@@ -6,6 +6,7 @@ import ESTree from "estree";
 
 const rule: Rule.RuleModule = {
     meta: {
+        type: "suggestion",
         docs: {
             description: "CSS Modules should have the same name as a component and located in the same folder",
             category: "Strict",
@@ -13,7 +14,6 @@ const rule: Rule.RuleModule = {
             url: "https://github.com/alexasselin008/poc-web-configs/blob/main/packages/eslint-plugin/docs/rules/strict-css-modules-names.md"
         },
     },
-
     create: function(context) {
         const parsedPath = parse(getFileName(context));
 
@@ -59,4 +59,4 @@ const rule: Rule.RuleModule = {
     }
 };
 
-export default rule;
+export = rule;
