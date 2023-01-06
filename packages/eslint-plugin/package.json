@@ -35,8 +35,7 @@
     "eslint-plugin-jsx-a11y": "6.6.1",
     "eslint-plugin-react": "*",
     "eslint-plugin-react-hooks": "*",
-    "eslint-plugin-lodash": "*",
-    "requireindex": "1.2.0"
+    "eslint-plugin-lodash": "*"
   },
   "devDependencies": {
     "@types/eslint": "8.4.10",
