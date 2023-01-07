@@ -5,6 +5,7 @@
     "module": "esnext",
     "lib": ["esnext"],
     "target": "ES6",
-    "declaration": true
+    "declaration": true,
+    "noEmit": false
   }
 }
