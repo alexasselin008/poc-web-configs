@@ -11,14 +11,12 @@ const plugin: ESLint.Plugin = {
         lodash: require("./lib/config/lodash"),
         mdx: require("./lib/config/mdx"),
         nextjs: require("./lib/config/nextjs"),
-        "react-query": require("./lib/config/react-query"),
         react: require("./lib/config/react"),
         recommended: require("./lib/config/recommended"),
         "sort-imports": require("./lib/config/sort-imports"),
         "storybook-csf": require("./lib/config/storybook-csf"),
         storybook: require("./lib/config/storybook"),
         "testing-library": require("./lib/config/testing-library"),
-        "typescript-requiring-type-checking": require("./lib/config/typescript-requiring-type-checking"),
         typescript: require("./lib/config/typescript"),
     }
 }
