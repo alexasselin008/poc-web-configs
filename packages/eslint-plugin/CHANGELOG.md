@@ -1,5 +1,11 @@
 # @alexasselin/eslint-plugin-1
 
+## 3.0.0
+
+### Major Changes
+
+- a69ecfb: Added multiple configs
+
 ## 2.3.0
 
 ### Minor Changes
