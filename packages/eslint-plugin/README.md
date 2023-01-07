@@ -41,21 +41,39 @@ ShareGate’s ESLint configs come bundled in this package. In order to use them,
 }
  ```
 
+If you want to use `typescript-requiring-type-checking`, you need to configure your `parserOptions` to use the `tsconfig.json` file in your project.
+ To tap into TypeScript's additional powers, there are two small changes you need to make to your config file:
+
+
+```js
+  parserOptions: {
+    tsconfigRootDir: __dirname,
+    project: ['./tsconfig.json'],
+  },
+```
+
 ## Provided Configurations
 
-Language-specific configs.
-| Language/Package Name | Config | Description |
+### Language/Framework-specific configs.
+| Language/Framework | Config | Description |
 | --- | --- | --- |
 | JavaScript - [recommended](lib/config/recommended.ts) | "plugin:@sharegate/recommended" | Use this for all JavaScript/TypeScript projects. |
 | JavaScript - [sort-imports](lib/config/sort-imports.ts) | "plugin:@sharegate/sort-imports" | Use this for JavaScript/TypeScript projects. |
 | [typescript](lib/config/typescript.ts) | "plugin:@sharegate/typescript" | Use this for TypeScript projects. |
+| [typescript-requiring-type-checking](lib/config/typescript-requiring-type-checking.ts) | "plugin:@sharegate/typescript-requiring-type-checking" | Use this for TypeScript projects. |
 | [react](lib/config/react.ts) | "plugin:@sharegate/react" | Use this for React projects. |
 | [nextjs](lib/config/nextjs.ts) |"plugin:@sharegate/nextjs" | Use this for NextJs projects. |
+| [mdx](lib/config/mdx.ts) |"plugin:@sharegate/mdx" | Use this for [mdx files](https://mdxjs.com/). |
 
-Third-party-specific configs.
+### Third-party-specific configs.
 | Third party | Config | Description |
 | --- | --- | --- |
-| [lodash](lib/config/lodash.ts) | "plugin:@sharegate/lodash" | Use this for projects using [lodash](https://lodash.com/).
+| [lodash](lib/config/lodash.ts) | "plugin:@sharegate/lodash" | Use this for projects using [lodash](https://lodash.com/).|
+| [react-query](lib/config/react-query.ts) | "plugin:@sharegate/react-query" | Use this for projects using [react-query](https://react-query-v3.tanstack.com/).|
+| [jest](lib/config/jest.ts) | "plugin:@sharegate/jest" | Use this for projects using [jest](https://jestjs.io/).|
+| [testing-library](lib/config/testing-library.ts) | "plugin:@sharegate/testing-library" | Use this for projects using [testing-library](https://testing-library.com/).|
+| [storybook](lib/config/storybook.ts) | "plugin:@sharegate/storybook" | Use this for projects using [storybook](https://storybook.js.org/).|
+| [storybook-csf](lib/config/storybook-csf.ts) | "plugin:@sharegate/storybook-csf" | Use this for projects using [storybook](https://storybook.js.org/) but with the CSF format.|
 
 ## Plugin-Provided Rules 
 
