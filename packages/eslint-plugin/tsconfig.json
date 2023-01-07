@@ -5,8 +5,9 @@
     "outDir": "dist",
     "declaration": true,
     "target": "ES6",
-    "module": "CommonJS"
+    "module": "CommonJS",
+    "esModuleInterop": true
   },
-  "include": ["lib", "index.ts"],
+  "include": ["lib"],
   "exclude": ["dist"]
 }
