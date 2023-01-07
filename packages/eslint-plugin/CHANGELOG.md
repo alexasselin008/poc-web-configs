@@ -1,5 +1,11 @@
 # @alexasselin/eslint-plugin-1
 
+## 3.1.0
+
+### Minor Changes
+
+- d4dfa66: Update shipped files and added test
+
 ## 3.0.0
 
 ### Major Changes
