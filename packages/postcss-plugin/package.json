@@ -18,6 +18,11 @@
         "postcss-plugin",
         "css"
     ],
+    "files": [
+        "dist",
+        "CHANGELOG.md",
+        "README.md"
+    ],
     "main": "./dist/index.js",
     "types": "./dist/index.d.ts",
     "scripts": {
