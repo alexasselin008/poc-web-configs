@@ -7,8 +7,8 @@ import rule from "../../../lib/rules/strict-css-modules-names";
 //------------------------------------------------------------------------------
 // Tests
 //------------------------------------------------------------------------------
-
 const ruleTester = new RuleTester();
+
 const parserOptions: Linter.ParserOptions = {
     ecmaVersion: 6,
     sourceType: "module",

@@ -1,15 +1,12 @@
-
-
 //------------------------------------------------------------------------------
 // Requirements
 //------------------------------------------------------------------------------
-import { RuleTester, Linter } from "eslint";
+import { RuleTester, Linter, Rule } from "eslint";
 import rule from "../../../lib/rules/restrict-full-import";
 
 //------------------------------------------------------------------------------
 // Tests
 //------------------------------------------------------------------------------
-
 const ruleTester = new RuleTester();
 
 const parserOptions: Linter.ParserOptions = {
@@ -19,9 +16,7 @@ const parserOptions: Linter.ParserOptions = {
 
 const options = [["lodash"]];
 
-// prettier-ignore
-
-function configFor(type) {
+function configFor(type: keyof Rule.NodeListener) {
     const message = `Unexpected full import of restricted module '${options[0][0]}'.`;
 
     return {
