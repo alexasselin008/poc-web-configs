@@ -1,6 +1,6 @@
-import * as fs from "fs";
-import * as path from "path";
-import * as plugin from "../lib"
+import fs from "fs";
+import path from "path";
+import plugin from "../lib"
 
 const rules = fs.readdirSync(path.resolve(__dirname, "../lib/rules")).map(x => path.parse(x).name)
 const configs = fs.readdirSync(path.resolve(__dirname, "../lib/config")).map(x => path.parse(x).name)
