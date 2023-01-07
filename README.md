@@ -21,6 +21,11 @@ Excluded from POC:
 - Replace lerna with pnpm?
   - i've created a pr where i replaced lerna with pnpm, and the perfomance is betetr. I've stashed this for now, since using a new package manager would mean forcing all devs to use it. I think it's better to keep lerna for now, and maybe switch to pnpm in the future.
   
+Notes are located in the documentation folder:
+- [NOTES.md](./documentation/NOTES.md)
+- [lerna-npm-vs-pnpm](./documentation/lerna-npm-vs-pnpm.md)
+- [lerna-vs-changeset](./documentation/lerna-vs-changeset.md)
+  
 ## Usage 
   
 This repo is managed as a monorepo that is composed of many npm packages, where each package has its own README and documentation describing usage.
