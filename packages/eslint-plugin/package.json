@@ -28,14 +28,19 @@
     "test": "jest --config=../../jest.config.ts"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "*",
-    "@next/eslint-plugin-next": "*",
-    "eslint-plugin-sort-imports-es6-autofix": "*",
-    "eslint-plugin-import": "*",
-    "eslint-plugin-jsx-a11y": "6.6.1",
-    "eslint-plugin-react": "*",
-    "eslint-plugin-react-hooks": "*",
-    "eslint-plugin-lodash": "*"
+    "@typescript-eslint/eslint-plugin": "^5",
+    "@next/eslint-plugin-next": "^13",
+    "eslint-plugin-sort-imports-es6-autofix": "^0",
+    "eslint-plugin-import": "^2",
+    "eslint-plugin-jsx-a11y": "^6",
+    "eslint-plugin-react": "^7",
+    "eslint-plugin-react-hooks": "^4",
+    "eslint-plugin-lodash": "^7",
+    "eslint-plugin-jest": "^27",
+    "eslint-plugin-mdx": "^2",
+    "eslint-plugin-storybook": "^0",
+    "eslint-plugin-testing-library": "^5",
+    "eslint-plugin-react-query": "^1"
   },
   "devDependencies": {
     "@types/eslint": "8.4.10",

@@ -20,3 +20,6 @@ We should consider adding a typechecking config for eslint.
 [typescript-type-checking](https://github.com/Shopify/web-configs/blob/main/packages/eslint-plugin/lib/config/typescript-type-checking.js)
 
 We should add a test to make sure all rules and configs are exported. Similar to what Orbit has
+
+## TODOs:
+- Optimise what is exported from the package. At the moment, .ts files are being exported.
