@@ -1,5 +1,11 @@
 # @alexasselin/postcss-plugin1
 
+## 1.3.0
+
+### Minor Changes
+
+- d4dfa66: Update shipped files and added test
+
 ## 1.2.0
 
 ### Minor Changes
