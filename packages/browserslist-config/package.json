@@ -8,6 +8,11 @@
     "sharegate",
     "browserslist"
   ],
+  "files": [
+    "dist",
+    "CHANGELOG.md",
+    "README.md"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/alexasselin008/poc-web-configs.git",

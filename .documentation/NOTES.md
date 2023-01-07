@@ -12,14 +12,3 @@ I've tried to remove the individual changelogs using --no-changelog or even addi
 
 ## Notes about eslint plugins: 
 We should consider removing restrict-full-import rule since "no-restricted-imports" does the same thing i think?
-
-We should consider adding the following eslint plugins:
-- [React Query](https://www.npmjs.com/package/eslint-plugin-react-query/)
-
-We should consider adding a typechecking config for eslint.
-[typescript-type-checking](https://github.com/Shopify/web-configs/blob/main/packages/eslint-plugin/lib/config/typescript-type-checking.js)
-
-We should add a test to make sure all rules and configs are exported. Similar to what Orbit has
-
-## TODOs:
-- Optimise what is exported from the package. At the moment, .ts files are being exported.
