@@ -3,6 +3,7 @@
   "extends": "./base.json",
   "compilerOptions": {
     "module": "esnext",
+    "lib": ["esnext"],
     "target": "ES6",
     "declaration": true
   }
