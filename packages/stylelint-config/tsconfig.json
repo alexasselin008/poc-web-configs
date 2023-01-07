@@ -1,11 +1,9 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "extends": "@alexasselin/typescript-configs1/base.json",
+  "extends": "@alexasselin/typescript-configs1/library.json",
   "compilerOptions": {
-    "outDir": "dist",
-    "declaration": true,
-    "target": "ES6",
-    "module": "commonjs"
+    "module": "CommonJS",
+    "outDir": "dist"
   },
   "exclude": ["dist"]
 }
