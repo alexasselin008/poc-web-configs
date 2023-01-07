@@ -1,19 +1,7 @@
-import type { PluginCreator, Input } from "postcss";
+import type { PluginCreator } from "postcss";
 import postcssPresetEnv, { pluginOptions as postcssPresetEnvOptions } from "postcss-preset-env";
 import postcssFlexBugsFixes from "postcss-flexbugs-fixes"
 import postcssPxtorem from "postcss-pxtorem";
-
-// We duplicate this interface since the postcss-pxtorem package doesn't have typings and consumer needs to know the options
-interface postcssPxtoremOptions {
-    propList?: string[];
-    rootValue?: number | ((input:Input) => number),  
-    unitPrecision?: number; 
-    selectorBlackList?: string[],
-    replace?: boolean,
-    mediaQuery?: boolean,
-    minPixelValue?: number,
-    exclude?: null | string | ((path: string) => boolean);
-}
 
 const PRESET_ENV_OPTIONS: postcssPresetEnvOptions = {
     autoprefixer: {
@@ -25,7 +13,8 @@ const PRESET_ENV_OPTIONS: postcssPresetEnvOptions = {
     }
 };
 
-const PXTOREM_OPTIONS: postcssPxtoremOptions = {
+// px to rem has no type definition
+const PXTOREM_OPTIONS: unknown = {
     rootValue: 16,
     propList: [
         "font-size",
