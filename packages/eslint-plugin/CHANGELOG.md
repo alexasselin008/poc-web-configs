@@ -1,5 +1,11 @@
 # @alexasselin/eslint-plugin-1
 
+## 3.2.0
+
+### Minor Changes
+
+- 476dda9: finalizing the initial packages
+
 ## 3.1.0
 
 ### Minor Changes

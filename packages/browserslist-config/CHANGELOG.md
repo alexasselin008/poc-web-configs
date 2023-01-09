@@ -1,5 +1,11 @@
 # @alexasselin/browserslist-config1
 
+## 1.4.0
+
+### Minor Changes
+
+- 476dda9: finalizing the initial packages
+
 ## 1.3.0
 
 ### Minor Changes
