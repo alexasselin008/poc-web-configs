@@ -1,4 +1,5 @@
 {
+    "$schema": "https://json.schemastore.org/package",
     "name": "@alexasselin/stylelint-config1",
     "author": "Groupe Sharegate inc.",
     "version": "1.4.0",

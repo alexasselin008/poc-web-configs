@@ -8,13 +8,13 @@ const configs = fs.readdirSync(path.resolve(__dirname, "../lib/config")).map(x =
 const exportedConfigs = Object.keys(plugin.configs ?? {});
 configs.forEach(config => {
     test(`Config ${config} is exported`, () => {
-      expect(exportedConfigs.includes(config)).toBeTruthy();
+        expect(exportedConfigs.includes(config)).toBeTruthy();
     })
-  })
+})
 
 const exportedRules = Object.keys(plugin.rules ?? {});
 rules.forEach(rule => {
     test(`Rule ${rule} is exported`, () => {
-      expect(exportedRules.includes(rule)).toBeTruthy();
+        expect(exportedRules.includes(rule)).toBeTruthy();
     })
-  })
+})

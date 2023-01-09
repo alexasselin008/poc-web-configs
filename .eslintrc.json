@@ -7,5 +7,13 @@
     "env": {
         "commonjs": true,
         "node": true
-    }
+    },
+    "overrides": [
+        {
+            "files": ["*.json"],
+            "rules": {
+                "indent": ["warn", 4]
+            }
+        }
+    ]
 }
