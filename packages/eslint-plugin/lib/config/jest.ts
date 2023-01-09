@@ -1,5 +1,5 @@
 import type { Linter } from "eslint";
-import { testFiles, reactTestFiles } from "../utils/patterns"
+import { testFiles, reactTestFiles } from "../utils/patterns";
 
 const config: Linter.Config = {
     plugins: ["jest"],
@@ -9,7 +9,7 @@ const config: Linter.Config = {
             env: {
                 jest: true,
                 browser: true,
-                node: true,
+                node: true
             },
             extends: ["plugin:jest/recommended"],
             rules: {
@@ -37,10 +37,10 @@ const config: Linter.Config = {
                 "jest/valid-describe-callback": "warn",
                 "jest/valid-expect": "warn",
                 "jest/valid-expect-in-promise": "warn",
-                "jest/valid-title": "warn",
-            },
-        },
-    ],
+                "jest/valid-title": "warn"
+            }
+        }
+    ]
 };
 
 export = config;

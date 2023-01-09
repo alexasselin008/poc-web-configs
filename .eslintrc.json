@@ -1,9 +1,10 @@
 {
     "$schema": "https://json.schemastore.org/eslintrc",
     "root": true,
-    "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
+    "extends":[
+        "plugin:@alexasselin/1/jest"
+    ],
     "parser": "@typescript-eslint/parser",
-    "plugins": ["@typescript-eslint"],
     "env": {
         "commonjs": true,
         "node": true
@@ -14,6 +15,13 @@
             "rules": {
                 "indent": ["warn", 4]
             }
+        },
+        {
+            "files": ["*.ts"],
+            "extends": [
+                "plugin:@alexasselin/1/recommended",
+                "plugin:@alexasselin/1/typescript"
+            ]
         }
     ]
 }

@@ -1,10 +1,10 @@
-import {ESLint} from "eslint";
+import { ESLint } from "eslint";
 
 const plugin: ESLint.Plugin = {
     rules: { 
         "prefer-cx": require("./rules/prefer-cx"),
         "restrict-full-import": require("./rules/restrict-full-import"),
-        "strict-css-modules-names": require("./rules/strict-css-modules-names"),
+        "strict-css-modules-names": require("./rules/strict-css-modules-names")
     },
     configs: {
         jest: require("./config/jest"),
@@ -17,8 +17,8 @@ const plugin: ESLint.Plugin = {
         "storybook-csf": require("./config/storybook-csf"),
         storybook: require("./config/storybook"),
         "testing-library": require("./config/testing-library"),
-        typescript: require("./config/typescript"),
+        typescript: require("./config/typescript")
     }
-}
+};
 
 export = plugin;

@@ -15,7 +15,7 @@ const config: Config = {
 
         // Enforce non-stylistic conventions
         "length-zero-no-unit": true,
-        'unit-allowed-list': [
+        "unit-allowed-list": [
             "em",
             "rem",
             "px",

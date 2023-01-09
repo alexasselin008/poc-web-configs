@@ -1,6 +1,6 @@
 import type { PluginCreator } from "postcss";
 import postcssPresetEnv, { pluginOptions as postcssPresetEnvOptions } from "postcss-preset-env";
-import postcssFlexBugsFixes from "postcss-flexbugs-fixes"
+import postcssFlexBugsFixes from "postcss-flexbugs-fixes";
 import postcssPxtorem from "postcss-pxtorem";
 
 const PRESET_ENV_OPTIONS: postcssPresetEnvOptions = {
@@ -43,10 +43,9 @@ const PXTOREM_OPTIONS: unknown = {
 const DEFAULT_OPTIONS = {	
     presetEnvOptions: PRESET_ENV_OPTIONS,
     pxtoremOptions: PXTOREM_OPTIONS
-}
+};
 
-const plugin: PluginCreator<typeof DEFAULT_OPTIONS> = ({presetEnvOptions, pxtoremOptions} = DEFAULT_OPTIONS) => {
-    
+const plugin: PluginCreator<typeof DEFAULT_OPTIONS> = ({ presetEnvOptions, pxtoremOptions } = DEFAULT_OPTIONS) => {
     return {
         postcssPlugin: "@alexasselin/postcss-plugin1",
         plugins: [

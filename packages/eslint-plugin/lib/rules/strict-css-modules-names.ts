@@ -12,7 +12,7 @@ const rule: Rule.RuleModule = {
             category: "Strict",
             recommended: false,
             url: "https://github.com/alexasselin008/poc-web-configs/blob/main/packages/eslint-plugin/docs/rules/strict-css-modules-names.md"
-        },
+        }
     },
     create: function(context) {
         const parsedPath = parse(getFileName(context));
