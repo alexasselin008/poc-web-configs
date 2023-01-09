@@ -1,27 +1,9 @@
 {
     "$schema": "https://json.schemastore.org/eslintrc",
     "root": true,
-    "extends":[
+    "extends": [
+        "plugin:@alexasselin/1/recommended",
+        "plugin:@alexasselin/1/typescript",
         "plugin:@alexasselin/1/jest"
-    ],
-    "parser": "@typescript-eslint/parser",
-    "env": {
-        "commonjs": true,
-        "node": true
-    },
-    "overrides": [
-        {
-            "files": ["*.json"],
-            "rules": {
-                "indent": ["warn", 4]
-            }
-        },
-        {
-            "files": ["*.ts"],
-            "extends": [
-                "plugin:@alexasselin/1/recommended",
-                "plugin:@alexasselin/1/typescript"
-            ]
-        }
     ]
 }

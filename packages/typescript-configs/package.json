@@ -1,21 +1,21 @@
 {
     "$schema": "https://json.schemastore.org/package",
     "name": "@alexasselin/typescript-configs1",
-    "author": "Groupe Sharegate inc.",
     "version": "1.1.0",
     "description": "Sharegate recommended typescript config.",
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/alexasselin008/poc-web-configs.git",
-        "directory": "packages/typescript-configs"
-    },
-    "license": "Apache-2.0",
     "keywords": [
         "sharegate",
         "typescript",
         "tsconfig",
         "config"
     ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/alexasselin008/poc-web-configs.git",
+        "directory": "packages/typescript-configs"
+    },
+    "license": "Apache-2.0",
+    "author": "Groupe Sharegate inc.",
     "publishConfig": {
         "access": "public"
     }
