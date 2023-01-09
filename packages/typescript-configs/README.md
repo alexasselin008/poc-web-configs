@@ -73,13 +73,22 @@ To start, create a tsconfig.json in the root of your project.
 }
 ```
 
+### TypeScript Library
+
+```json
+{
+  "extends": "@sharegate/typescript-configs/library.json",
+  "compilerOptions": {
+  }
+}
+```
+
 ### All Other TypeScript Projects
 
 ```json
 {
   "extends": "@sharegate/typescript-configs/base.json",
   "compilerOptions": {
-    "baseUrl": ".",
   }
 }
 ```

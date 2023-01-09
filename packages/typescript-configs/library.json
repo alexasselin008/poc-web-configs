@@ -1,7 +1,10 @@
 {
     "$schema": "https://json.schemastore.org/tsconfig",
-    "extends": "./react.json",
+    "extends": "./base.json",
     "compilerOptions": {
+        "module": "esnext",
+        "lib": ["esnext"],
+        "target": "ES6",
         "declaration": true,
         "noEmit": false
     }

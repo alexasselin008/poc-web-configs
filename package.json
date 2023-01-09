@@ -1,31 +1,35 @@
 {
-  "name": "poc-web-configs",
-  "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
-  "scripts": {
-    "build": "lerna run build",
-    "clean": "lerna run clean && rimraf node_modules",
-    "lint": "eslint \"packages/**\" --ext .ts,.tsx",
-    "test": "lerna run test",
-    "changeset": "changeset",
-    "release": "npm run build && changeset publish"
-  },
-  "devDependencies": {
-    "@changesets/cli": "^2.26.0",
-    "@types/jest": "29.2.5",
-    "@typescript-eslint/eslint-plugin": "5.47.1",
-    "@typescript-eslint/parser": "5.47.1",
-    "eslint": "8.30.0",
-    "jest": "29.3.1",
-    "lerna": "6.3.0",
-    "rimraf": "3.0.2",
-    "ts-jest": "29.0.3",
-    "ts-node": "10.9.1",
-    "typescript": "4.9.4"
-  },
-  "engines": {
-    "node": ">=14.0.0"
-  }
+    "$schema": "https://json.schemastore.org/package",
+    "name": "poc-web-configs",
+    "private": true,
+    "license": "Apache-2.0",
+    "workspaces": [
+        "packages/*"
+    ],
+    "scripts": {
+        "build": "lerna run build",
+        "build:eslint": "lerna run build --scope @alexasselin/eslint-plugin-1",
+        "changeset": "changeset",
+        "clean": "lerna run clean && rimraf node_modules",
+        "lint": "npm run build:eslint && eslint .",
+        "lint:fix": "npm run build:eslint && eslint . --fix",
+        "release": "npm run build && changeset publish",
+        "test": "lerna run test"
+    },
+    "devDependencies": {
+        "@alexasselin/eslint-plugin-1": "*",
+        "@changesets/cli": "^2.26.0",
+        "@types/jest": "29.2.5",
+        "@typescript-eslint/parser": "5.47.1",
+        "eslint": "8.30.0",
+        "jest": "29.3.1",
+        "lerna": "6.3.0",
+        "rimraf": "3.0.2",
+        "ts-jest": "29.0.3",
+        "ts-node": "10.9.1",
+        "typescript": "4.9.4"
+    },
+    "engines": {
+        "node": ">=14.0.0"
+    }
 }

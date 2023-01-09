@@ -9,7 +9,7 @@ const rule: Rule.RuleModule = {
             description: "Prevent importing the entirety of a package.",
             category: "Best Practices",
             recommended: false,
-            url: "https://github.com/alexasselin008/poc-web-configs/blob/main/packages/eslint-plugin/docs/rules/restrict-full-import.md",
+            url: "https://github.com/alexasselin008/poc-web-configs/blob/main/packages/eslint-plugin/docs/rules/restrict-full-import.md"
         },
         schema: [
             {
@@ -110,7 +110,7 @@ const rule: Rule.RuleModule = {
             }
         }
 
-        function checkVariableDeclarator(node: ESTree.VariableDeclarator ) {
+        function checkVariableDeclarator(node: ESTree.VariableDeclarator) {
             checkRequire(node, node.id, node.init);
         }
 

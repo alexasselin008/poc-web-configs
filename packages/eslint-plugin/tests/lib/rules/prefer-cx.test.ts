@@ -1,4 +1,3 @@
-
 //------------------------------------------------------------------------------
 // Requirements
 //------------------------------------------------------------------------------
@@ -9,7 +8,9 @@ import rule from "../../../lib/rules/prefer-cx";
 // Tests
 //------------------------------------------------------------------------------
 const ruleTester = new RuleTester();
+
 const parserOptions: Linter.ParserOptions = { ecmaVersion: 6, sourceType: "module" };
+
 const errors = [
     {
         type: "ImportDeclaration",

@@ -1,10 +1,9 @@
 import type { PluginCreator } from "postcss";
-import postcssPresetEnv, { pluginOptions } from "postcss-preset-env";
-import postcssFlexBugsFixes from "postcss-flexbugs-fixes"
+import postcssPresetEnv, { pluginOptions as postcssPresetEnvOptions } from "postcss-preset-env";
+import postcssFlexBugsFixes from "postcss-flexbugs-fixes";
 import postcssPxtorem from "postcss-pxtorem";
 
-
-const PRESET_ENV_OPTIONS: pluginOptions = {
+const PRESET_ENV_OPTIONS: postcssPresetEnvOptions = {
     autoprefixer: {
         flexbox: "no-2009"
     },
@@ -14,7 +13,8 @@ const PRESET_ENV_OPTIONS: pluginOptions = {
     }
 };
 
-const PXTOREM_OPTIONS = {
+// px to rem has no type definition
+const PXTOREM_OPTIONS: unknown = {
     rootValue: 16,
     propList: [
         "font-size",
@@ -43,10 +43,9 @@ const PXTOREM_OPTIONS = {
 const DEFAULT_OPTIONS = {	
     presetEnvOptions: PRESET_ENV_OPTIONS,
     pxtoremOptions: PXTOREM_OPTIONS
-}
+};
 
-const plugin: PluginCreator<typeof DEFAULT_OPTIONS> = ({presetEnvOptions, pxtoremOptions} = DEFAULT_OPTIONS) => {
-    
+const plugin: PluginCreator<typeof DEFAULT_OPTIONS> = ({ presetEnvOptions, pxtoremOptions } = DEFAULT_OPTIONS) => {
     return {
         postcssPlugin: "@alexasselin/postcss-plugin1",
         plugins: [

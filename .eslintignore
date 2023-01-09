@@ -1,4 +1,4 @@
 dist
 node_modules
 *.md
-*.json
+package-lock.json

@@ -1,14 +1,8 @@
 {
+    "$schema": "https://json.schemastore.org/package",
     "name": "@alexasselin/stylelint-config1",
-    "author": "Groupe Sharegate inc.",
     "version": "1.4.0",
     "description": "Sharegate recommended stylelint config.",
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/alexasselin008/poc-web-configs.git",
-        "directory": "packages/stylelint-config"
-    },
-    "license": "Apache-2.0",
     "keywords": [
         "sharegate",
         "stylelint",
@@ -16,28 +10,30 @@
         "config",
         "css"
     ],
-    "publishConfig": {
-        "access": "public"
-    },
+    "license": "Apache-2.0",
+    "author": "Groupe Sharegate inc.",
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
     "files": [
         "dist",
         "CHANGELOG.md",
         "README.md"
     ],
-    "main": "./dist/index.js",
-    "types": "./dist/index.d.ts",
     "scripts": {
         "build": "tsc",
         "clean": "rimraf dist node_modules"
     },
-    "peerDependencies": {
-        "stylelint": ">=14.10.0"
+    "dependencies": {
+        "@alexasselin/typescript-configs1": "*",
+        "stylelint-config-recommended": "^9"
     },
     "devDependencies": {
         "stylelint": ">=14.10.0"
     },
-    "dependencies": {
-        "stylelint-config-recommended": "^9",
-        "@alexasselin/typescript-configs1": "*"
+    "peerDependencies": {
+        "stylelint": ">=14.10.0"
+    },
+    "publishConfig": {
+        "access": "public"
     }
 }
