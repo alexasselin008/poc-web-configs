@@ -2,7 +2,7 @@
 
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](../../LICENSE.md) [![npm version](https://badge.fury.io/js/@sharegate%eslint-plugin.svg)](https://badge.fury.io/js/@sharegate%eslint-plugin.svg)
 
-ShareGate’s ESLint configs.
+ShareGate’s ESLint configurations.
 
 ## Installation
 
