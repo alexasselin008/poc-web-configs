@@ -1,5 +1,11 @@
 # @alexasselin/eslint-plugin-1
 
+## 3.3.0
+
+### Minor Changes
+
+- [#30](https://github.com/alexasselin008/poc-web-configs/pull/30) [`036d5c5`](https://github.com/alexasselin008/poc-web-configs/commit/036d5c5cdbec138898b710974a39c80aee1c1a92) Thanks [@alexasselin008](https://github.com/alexasselin008)! - Updated documentation
+
 ## 3.2.0
 
 ### Minor Changes
